@@ -139,3 +139,25 @@ main {
     font-size: .8em;
     text-align: center;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+@include desktop {
+    .desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+}

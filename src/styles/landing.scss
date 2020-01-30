@@ -24,27 +24,41 @@ $colors: (
 $desktop: 800px;
 
 @mixin desktop {
-    @media (max-width: #{$desktop}) {
+    @media (min-width: #{$desktop}) {
         @content;
     }
 }
 
 #landing {
     display: flex;
-    padding: 5vw 4vw;
-    background-image: url("../assets/images/payment.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    flex-wrap: wrap;
+    @include  desktop {
+        padding: 5vw 4vw;
+        background-image: url("../assets/images/payment.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-wrap: nowrap;
+    }
 }
 
-.landing > div {
-    width: 31.5%;
+#landing > div {
+    order: 3;
+    flex: 1 0 90%;
+
+    @include desktop {
+        order: unset;
+        flex: unset;
+        width: 31.5%;
+    }
 }
 
 .landing-image {
-    width: auto;
+    width: 50%;
     height: 100%;
+    @include desktop {
+        width: auto;
+    }
 }
 
 #greeting {
@@ -55,31 +69,53 @@ $desktop: 800px;
     text-align: center;
     color: color(deepSeaGreen);
 
+    @include desktop {
+        padding: 0 2vw;
+    }
+
     h2 {
         text-transform: uppercase;
-        font-size: 2.5vw;
+        font-size: 6vw;
+        @include desktop {
+            font-size: 2.5vw;
+        }
         margin: 0;
     }
 
     p {
-        font-size: 1.5vw;
+        width: 60vw;
+        font-size: 4.5vw;
+        margin: 1vw;
+        @include desktop {
+            font-size: 1.5vw;
+            width: unset;
+            margin: .5vw;
+        }
         font-weight: 300;
     }
 
-    #dark-box {
+    .bold {
+        font-weight: bold;
+    }
+
+    #light-box {
         background-color: color(alabaster);
         padding: 0 3vw 2vw;
         border-radius: 5px;
         border: 1px solid color(mercury);
+        margin: 2vw 0;
+        @include desktop {
+            margin: 0;
+            padding: 0 1vw 1vw;
+        }
+
+        p {
+            margin: 1.5vw;
+        }
 
         .services {
             background-color: color(curiosBlue);
             color: color(white);
-
-            @include desktop {
-                padding: 1vw 3vw;
-                font-size: 2vw;
-            }
         }
     }
 }

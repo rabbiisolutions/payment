@@ -18,11 +18,8 @@ const Landing = () => {
         />
         <div id={'greeting'}>
           <h2>investment that matters</h2>
-          <p>Parents spend an average of half a
-            million per student in primary
-            and high school,</p>
-          <p className={'bold'}>We provide the extra help
-            to make sure that it counts.</p>
+          <p>Parents spend an average of half a million per student in primary and high school,</p>
+          <p className={'bold'}>We provide the extra help to make sure that it counts.</p>
           <div id={'light-box'}>
             <p>Sign up to see our price list <span>(client only*)</span>.</p>
             <ButtonLink value={texts.signUp} link={"https://forms.gle/3JZCSM2JJTPLTjP57"} className="services"/>

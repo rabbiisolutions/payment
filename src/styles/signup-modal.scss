@@ -56,12 +56,13 @@ $desktop: 768px;
         font-size: .9em;
         margin: 2vw 0;
         text-transform: lowercase;
-        font-weight: 600;
+        font-weight: 300;
         text-align: center;
 
         @include desktop {
             font-size: 1em;
             margin: 1vw 0;
+            font-weight: 600;
         }
     }
 
