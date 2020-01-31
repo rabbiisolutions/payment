@@ -8,6 +8,7 @@ import SignUpModal from "./components/SignUpModal";
 import Landing from "./components/Landing";
 import Facts from "./components/Facts";
 import Accordion from "./components/Accordion";
+import DesktopView from "./components/Desktop";
 import texts from "./constants/texts";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Landing/>
           <Facts/>
           <Accordion/>
+          <DesktopView/>
         </main>
         <SideBar/>
         <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp} status="active"/>

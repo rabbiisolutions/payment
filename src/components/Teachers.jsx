@@ -1,6 +1,7 @@
 import React from "react";
 import teachers from "../constants/teachers";
 import Icon from "./basic/Icon";
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const Teacher = (props) => {
   return (
@@ -16,13 +17,15 @@ const Teacher = (props) => {
 
 const Teachers = () => {
   return (
-    <div>
+    <Router>
       <p className={'section-desc'}>{teachers.description}</p>
-      <Teacher icon={teachers.basic.icon} title={teachers.basic.title} desc={teachers.basic.desc}/>
-      <Teacher icon={teachers.choice.icon} title={teachers.choice.title} desc={teachers.choice.desc}/>
-      <Teacher icon={teachers.plus.icon} title={teachers.plus.title} desc={teachers.plus.desc}/>
-      <Teacher icon={teachers.premium.icon} title={teachers.premium.title} desc={teachers.premium.desc}/>
-    </div>
+      <div id={'teacher-list'}>
+        <Teacher icon={teachers.basic.icon} title={teachers.basic.title} desc={teachers.basic.desc}/>
+        <Teacher icon={teachers.choice.icon} title={teachers.choice.title} desc={teachers.choice.desc}/>
+        <Teacher icon={teachers.plus.icon} title={teachers.plus.title} desc={teachers.plus.desc}/>
+        <Teacher icon={teachers.premium.icon} title={teachers.premium.title} desc={teachers.premium.desc}/>
+      </div>
+    </Router>
   );
 };
 

@@ -93,7 +93,7 @@ main {
     text-align: center;
 
     @include desktop {
-        font-size: 2.25vw;
+        font-size: 2.5vw;
     }
 
     @include monitor {
@@ -141,21 +141,17 @@ main {
     font-weight: bold;
 }
 
-.desktop {
+#desktop-view {
     display: none;
-}
-
-.mobile {
-    display: block;
-}
-
-@include desktop {
-    .desktop {
+    @include desktop {
         display: block;
-    }
+        .section-title {
+            margin-bottom: 0;
+        }
 
-    .mobile {
-        display: none;
+        .section-desc {
+            margin-top: .5vw;
+        }
     }
 }
 
@@ -189,12 +185,21 @@ main {
 .accordion {
     margin-top: 1.5rem;
     padding: 1.5vw 3vw;
+    @include desktop {
+        display: none;
+    }
 }
 
 .section-desc {
     font-weight: 300;
     text-align: center;
     font-size: 4vw;
+    @include desktop {
+        font-size: 1.5vw;
+    }
+    @include monitor {
+        font-size: 1.25vw;
+    }
 }
 
 .collapse-content {
