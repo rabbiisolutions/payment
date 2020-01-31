@@ -22,9 +22,7 @@ const savings = {
   ]
 };
 
-const tagLine = ['An investment in tuition helps you get good grades which saves you',
-' money proportional to the total fees you have paid',
-' in both primary and high school.'];
+const tagLine = 'An investment in tuition helps you get good grades which saves you money.';
 
 const facts = {
   self: self, govt: govt, savings: savings, tagLine: tagLine

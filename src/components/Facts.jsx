@@ -32,9 +32,7 @@ const Facts = () => {
           <Fact title={facts.savings.title} desc={facts.savings.desc}/>
         </div>
         <div id={'tag-line'}>
-          <span>{facts.tagLine[0]}</span>
-          <span>{facts.tagLine[1]}</span>
-          <span>{facts.tagLine[2]}</span>
+          {facts.tagLine}
         </div>
       </section>
   )

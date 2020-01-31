@@ -48,11 +48,13 @@ $desktop: 800px;
             .variable {
                 text-align: center;
             }
-            .value {
-                font-weight: bold;
-            }
             span {
                 max-width: 50%;
+            }
+        }
+        .desc:nth-child(3) {
+            .value {
+                font-weight: bold;
             }
         }
     }
@@ -106,7 +108,7 @@ $desktop: 800px;
         width: 80%;
         margin: 6vw auto;
         text-align: center;
-        font-weight: bold;
+        font-weight: 300;
         @include desktop {
             font-size: 1.25vw;
             margin: 1vw auto;

@@ -158,3 +158,52 @@ main {
         display: none;
     }
 }
+
+.collapse-toggle {
+    color: color(deepSeaGreen);
+    background-color: color(alabaster);
+    border: 1px solid color(silverSand);
+    padding: 3vw 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    font-size: 4.25vw;
+    text-transform: capitalize;
+}
+
+.collapse-toggle.shown {
+    color: color(curiosBlue);
+    cursor: pointer;
+    border-color: color(curiosBlue);
+}
+
+#accordion-lead {
+    color: color(mirage80);
+    font-size: 3vw;
+    text-align: center;
+    font-weight: 300;
+    margin: 1.5em;
+}
+
+.accordion {
+    margin-top: 1.5rem;
+    padding: 1.5vw 3vw;
+}
+
+.section-desc {
+    font-weight: 300;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.collapse-content {
+    width: 96%;
+    margin: 1vw auto 0;
+    padding: .5vw 0 3vw;
+    background-color: color(alabaster);
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
