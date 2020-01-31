@@ -53,9 +53,9 @@ const sectionCollapseHandler = evt => {
   }
   toggle(current);
   try { // scroll in to view of current clicked element
-    element.parentNode.previousElementSibling.scrollIntoView();
+    element.parentNode.scrollIntoView();
   } catch (e) {
-    element.parentNode.parentNode.previousElementSibling.scrollIntoView();
+    element.parentNode.scrollIntoView();
     /*try {
       element.parentNode.previousElementSibling.scrollIntoView();
     } catch (e) {
