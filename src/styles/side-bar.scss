@@ -29,7 +29,7 @@ $navBarHeight: 3.5em;
 
     .menu-title {
         color: color(mirage64);
-        font-size: 3vw;
+        font-size: 4vw;
         text-align: center;
         display: block;
         padding-bottom: 1rem;
@@ -47,8 +47,8 @@ $navBarHeight: 3.5em;
         padding: 20px 15px;
         width: 100%;
         cursor: pointer;
-        font-weight: 300;
-        font-size: 3vw;
+        font-weight: 600;
+        font-size: 4vw;
 
         .text {
             padding: 20px 15px;
@@ -64,7 +64,7 @@ $navBarHeight: 3.5em;
     .menu-item.active, .menu-sub-item.active, .menu-item:hover, .menu-sub-item:hover {
         font-weight: bold;
         color: color(deepSeaGreen);
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
         background-color: color(gallery);
     }
