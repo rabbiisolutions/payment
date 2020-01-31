@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer";
 import SignUpModal from "./components/SignUpModal";
 import Landing from "./components/Landing";
+import Facts from "./components/Facts";
 import texts from "./constants/texts";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <NavBar/>
         <main>
           <Landing/>
+          <Facts/>
         </main>
         <SideBar/>
         <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp} status="active"/>

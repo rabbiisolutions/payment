@@ -3,6 +3,8 @@ import celebrateJpg from "../assets/images/celebrate.jpg";
 import savingsJpg from "../assets/images/savings.jpg";
 import celebrateWebp from "../assets/images/celebrate.webp";
 import savingsWebp from "../assets/images/savings.webp";
+import landingWebp from "../assets/images/landing.webp";
+import landingJpg from "../assets/images/landing.png";
 import ImageWebp from "../helpers/ImageWebp";
 import texts from "../constants/texts";
 import ButtonLink from "./basic/ButtonLink";
@@ -15,6 +17,12 @@ const Landing = () => {
             srcWebp={celebrateWebp}
             className={'landing-image'}
             alt={'celebrate'}
+        />
+        <ImageWebp
+            src={landingJpg}
+            srcWebp={landingWebp}
+            className={'mobile-landing'}
+            alt={'mobile-landing'}
         />
         <div id={'greeting'}>
           <h2>investment that matters</h2>

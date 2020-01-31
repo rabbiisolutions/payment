@@ -42,6 +42,14 @@ $desktop: 800px;
     }
 }
 
+.mobile-landing {
+    width: 100%;
+    height: auto;
+    @include desktop {
+        display: none;
+    }
+}
+
 #landing > div {
     order: 3;
     flex: 1 0 90%;
@@ -54,10 +62,11 @@ $desktop: 800px;
 }
 
 .landing-image {
-    width: 50%;
-    height: 100%;
+    display: none;
     @include desktop {
         width: auto;
+        height: 100%;
+        display: block;
     }
 }
 
