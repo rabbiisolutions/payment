@@ -21,10 +21,17 @@ $colors: (
     @return map_get($colors, $name);
 }
 
-$desktop: 800px;
+$desktop: 768px;
+$monitor: 1024px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin monitor {
+    @media (min-width: #{$monitor}) {
         @content;
     }
 }
@@ -57,6 +64,9 @@ $desktop: 800px;
     @include desktop {
         order: unset;
         flex: unset;
+        width: 50%;
+    }
+    @include monitor {
         width: 31.5%;
     }
 }
@@ -64,9 +74,12 @@ $desktop: 800px;
 .landing-image {
     display: none;
     @include desktop {
-        width: auto;
+        width: 40%;
         height: 100%;
         display: block;
+    }
+    @include monitor {
+        width: auto;
     }
 }
 
@@ -80,6 +93,10 @@ $desktop: 800px;
 
     @include desktop {
         padding: 0 2vw;
+        color: color(mirage);
+    }
+    @include monitor {
+        color: color(deepSeaGreen);
     }
 
     h2 {
@@ -96,9 +113,12 @@ $desktop: 800px;
         font-size: 4.5vw;
         margin: 1vw;
         @include desktop {
-            font-size: 1.5vw;
+            font-size: 1.75vw;
             width: unset;
             margin: .5vw;
+        }
+        @include monitor {
+            font-size: 1.5vw;
         }
         font-weight: 300;
     }
@@ -125,6 +145,7 @@ $desktop: 800px;
         .services {
             background-color: color(curiosBlue);
             color: color(white);
+            font-size: 1rem;
         }
     }
 }

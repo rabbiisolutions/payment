@@ -4,7 +4,6 @@ import ImageWebp from "../helpers/ImageWebp";
 import tuition from "../constants/tuition";
 import React from "react";
 import Icon from "./basic/Icon";
-import Services from "./Services";
 import servicesToggle from "../events/services";
 
 const Card = (props) => {
@@ -35,7 +34,6 @@ const Tuition = () => {
               webp={tuition.group.webp}
         />
       </div>
-      <Services/>
     </Router>
   );
 };

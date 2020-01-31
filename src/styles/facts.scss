@@ -1,4 +1,4 @@
-$desktop: 800px;
+$desktop: 768px;
 $monitor: 1024px;
 
 @mixin desktop {
@@ -35,6 +35,9 @@ $monitor: 1024px;
         @include desktop {
             margin: 2vw;
             padding: 1vw;
+            max-width: 39%;
+        }
+        @include monitor {
             max-width: 33%;
         }
 

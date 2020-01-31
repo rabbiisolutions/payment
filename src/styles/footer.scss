@@ -9,7 +9,7 @@ $colors: (
 }
 
 $desktop: 800px;
-$monitor: 1192px;
+$monitor: 1024px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
@@ -41,9 +41,12 @@ footer {
         margin-top: 4vw;
         font-size: 3.5vw;
         @include desktop {
-            font-size: 1.125rem;
+            font-size: 1rem;
             margin-top: inherit;
             margin-bottom: inherit;
+        }
+        @include monitor {
+            font-size: 1.125rem;
         }
     }
 
@@ -54,8 +57,13 @@ footer {
         padding: 1vw;
 
         a {
-            font-size: 1.125rem;
+            font-size: 1rem;
             margin-right: 25px;
+        }
+    }
+    @include monitor {
+        a {
+            font-size: 1.125rem;
         }
     }
 }

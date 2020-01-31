@@ -13,22 +13,80 @@ $monitor: 1024px;
     }
 }
 
+#tuition {
+    background-color: #fafafa;
+    padding: 3vw 0;
+}
+
 .tuition-image {
     display: none;
+    width: 100%;
+    height: auto;
+    z-index: 15;
+    border-radius: 10px;
+    vertical-align: baseline;
+    margin-left: 2.25vw;
+    margin-top: 2.25vw;
     @include desktop {
         display: block;
+        margin-right: 5vw;
+    }
+}
+
+.tuition-icon {
+    display: block;
+    @include desktop {
+        display: none;
     }
 }
 
 .tuition-type {
     padding: 0 4vw;
     margin-bottom: 9vw;
+    @include desktop {
+        position: relative;
+        width: 70%;
+        margin: 8vw auto 11vw;
+    }
+
+    .col {
+        @include desktop {
+            width: 100%;
+        }
+        @include monitor {
+            width: unset;
+        }
+    }
+
     h4 {
         font-size: 4.75vw;
     }
 
     button {
         border-width: 1px;
+        @include desktop {
+
+        }
+    }
+
+    @include desktop {
+        display: flex;
+        h4 {
+            font-size: 2.5vw;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 2vw;
+        }
+    }
+    @include monitor {
+        h4 {
+            font-size: 1.75vw;
+        }
+        p {
+            font-size: 1.5vw;
+        }
     }
 }
 
@@ -36,4 +94,45 @@ $monitor: 1024px;
     border-bottom: 1px solid #ECECEC;
     padding-bottom: 11vw;
     padding-top: .5vw;
+    @include desktop {
+        padding: 0;
+        border-bottom: none;
+    }
+}
+.tuition-type:nth-child(2) {
+    @include desktop {
+        flex-direction: row-reverse;
+        .tuition-image {
+            margin-right: 0;
+            margin-left: 5vw;
+            left: 0;
+        }
+    }
+}
+
+.tuition-type::after {
+    background: #27A1DA;
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65%;
+    height: 85%;
+    z-index: 0;
+    display: none;
+    max-width: 23vw;
+    max-height: 29.75vw;
+
+    @include desktop {
+        display: block;
+    }
+}
+
+.tuition-type:nth-child(2)::after {
+
+    @include desktop {
+        max-width: 21vw;
+        left: 54.5vw;
+    }
 }

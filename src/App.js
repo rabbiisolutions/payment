@@ -10,6 +10,7 @@ import Facts from "./components/Facts";
 import Accordion from "./components/Accordion";
 import DesktopView from "./components/Desktop";
 import texts from "./constants/texts";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <DesktopView/>
         </main>
         <SideBar/>
+        <Services/>
         <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp} status="active"/>
         <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
         <Footer/>
