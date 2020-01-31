@@ -5,6 +5,7 @@ import upIcon from "../assets/icons/collapse/bx_bx-caret-downup.svg";
 import React from "react";
 import texts from "../constants/texts";
 import Teachers from "./Teachers";
+import Tuition from "./Tuition";
 
 const Content = (data) => {
   return (
@@ -29,6 +30,8 @@ const Accordion = () => {
         <p id={'accordion-lead'}>tap a section to expand or collapse it</p>
         {Toggle(texts.titles[0])}
         {Content(<Teachers/>)}
+        {Toggle(texts.titles[1])}
+        {Content(<Tuition/>)}
       </section>
   )
 };

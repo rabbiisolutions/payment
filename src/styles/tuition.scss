@@ -1,0 +1,39 @@
+$desktop: 768px;
+$monitor: 1024px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin monitor {
+    @media (min-width: #{$monitor}) {
+        @content;
+    }
+}
+
+.tuition-image {
+    display: none;
+    @include desktop {
+        display: block;
+    }
+}
+
+.tuition-type {
+    padding: 0 4vw;
+    margin-bottom: 9vw;
+    h4 {
+        font-size: 4.75vw;
+    }
+
+    button {
+        border-width: 1px;
+    }
+}
+
+.tuition-type:nth-child(1) {
+    border-bottom: 1px solid #ECECEC;
+    padding-bottom: 11vw;
+    padding-top: .5vw;
+}

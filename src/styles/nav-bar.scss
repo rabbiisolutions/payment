@@ -58,24 +58,6 @@ $desktop: 800px;
         transform: scale(1.1);
     }
 
-    button {
-        -webkit-border-radius: $webkitRadius;
-        border-radius: $borderRadius;
-        background-color: color(alabaster);
-        color: color(curiosBlue);
-        border-width: 2px;
-        border-style: solid;
-        border-color: color(curiosBlue);
-        padding: .5em 1.5em;
-        cursor: $pointer;
-        font-size: $font16;
-        margin: 8px 0;
-    }
-
-    button:hover {
-        background-color: color(white);
-    }
-
     .toggle span{
         fill: color(mirage);
         cursor: $pointer;
@@ -137,4 +119,22 @@ $desktop: 800px;
     .toggle span svg:hover {
         transform: scale(1.1);
     }
+}
+
+button {
+    -webkit-border-radius: $webkitRadius;
+    border-radius: $borderRadius;
+    background-color: color(alabaster);
+    color: color(curiosBlue);
+    border-width: 2px;
+    border-style: solid;
+    border-color: color(curiosBlue);
+    padding: .5em 1.5em;
+    cursor: $pointer;
+    font-size: $font16;
+    margin: 8px 0;
+}
+
+button:hover {
+    background-color: color(white);
 }
