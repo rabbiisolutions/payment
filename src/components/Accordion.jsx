@@ -29,11 +29,15 @@ const Toggle = (title) => {
 const Accordion = () => {
   return (
       <section id={'mobile-collapse'} className={'accordion'}>
-        <p id={'accordion-lead'}>tap a section to expand or collapse it</p>
+        <p id={'accordion-lead'}>
+          The overall cost of tuition is dependent on the type of teachers and tuition you choose
+        </p>
         {Toggle(texts.titles[0])}
         {Content(<Teachers/>)}
         {Toggle(texts.titles[1])}
         {Content(<Tuition/>)}
+        {Toggle(texts.titles[2])}
+        {Content(<Discount/>)}
         <Refer/>
       </section>
   )

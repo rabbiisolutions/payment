@@ -126,7 +126,7 @@ main {
     border-width: 2px;
 }
 
-.services, .refer {
+.services {
     padding: .5rem 1.5rem;
     font-size: 1.25rem;
 }
@@ -134,6 +134,16 @@ main {
 .refer {
     background-color: color(curiosBlue);
     color: color(white);
+    margin-bottom: 3vw;
+    padding: .5rem 1.75rem;
+    font-size: 1.5rem;
+    @include desktop {
+        margin-bottom: 0;
+        font-size: 1.125rem;
+    }
+    @include monitor {
+        font-size: 1.5rem;
+    }
 }
 .refer:hover {
     background-color: color(white);
@@ -144,6 +154,13 @@ main {
     font-weight: 300;
     font-size: .8em;
     text-align: center;
+}
+
+.refer-text {
+    @include desktop {
+        font-size: 1.125vw;
+        margin: 0 0 1vw 0;
+    }
 }
 
 .bold {
@@ -184,7 +201,7 @@ main {
     border-color: color(curiosBlue);
 }
 
-#accordion-lead {
+#accordion-lead, .refer-text {
     color: color(mirage80);
     font-size: 3vw;
     text-align: center;
@@ -199,6 +216,12 @@ main {
     text-align: center;
     @include desktop {
         display: none;
+    }
+    .section-desc {
+        display: none;
+        @include desktop {
+            display: block;
+        }
     }
 }
 
