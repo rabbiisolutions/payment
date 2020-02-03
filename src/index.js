@@ -8,6 +8,7 @@ import './styles/landing.css';
 import './styles/facts.css';
 import './styles/teachers.css';
 import './styles/tuition.css';
+import './styles/discount.css';
 import './styles/services.css';
 import './styles/footer.css';
 import './styles/side-bar.css';

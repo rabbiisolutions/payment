@@ -6,6 +6,8 @@ import React from "react";
 import texts from "../constants/texts";
 import Teachers from "./Teachers";
 import Tuition from "./Tuition";
+import Refer from "./Refer";
+import Discount from "./Discount";
 
 const Content = (data) => {
   return (
@@ -32,6 +34,7 @@ const Accordion = () => {
         {Content(<Teachers/>)}
         {Toggle(texts.titles[1])}
         {Content(<Tuition/>)}
+        <Refer/>
       </section>
   )
 };

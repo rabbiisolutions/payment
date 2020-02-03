@@ -1,5 +1,6 @@
 import Teachers from "./Teachers";
 import Tuition from "./Tuition";
+import Discount from "./Discount";
 import React from "react";
 import texts from "../constants/texts";
 
@@ -13,6 +14,10 @@ const DesktopView = () => {
         <section id={'tuition'}>
           <h2 className={'section-title'}>{texts.titles[1]}</h2>
           <Tuition/>
+        </section>
+        <section id={'discount'}>
+          <h2 className={'section-title'}>{texts.titles[2]}</h2>
+          <Discount/>
         </section>
       </div>
   )
