@@ -45,6 +45,7 @@ $desktop: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     z-index: 50;
     box-shadow: 0 2px 4px rgba(27, 37, 49, 0.25);
 
@@ -108,6 +109,16 @@ $desktop: 800px;
     }
 
     .toggle {
+        display: flex;
+        justify-content: flex-end;
+        width: 50px;
+        padding: 0 3vw;
+        @include desktop {
+            display: none;
+        }
+    }
+
+    .toggle {
         @include desktop {
             display: none;
         }
@@ -126,10 +137,15 @@ button {
     border-radius: $borderRadius;
     background-color: color(alabaster);
     color: color(curiosBlue);
-    border-width: 2px;
+    border-width: 1px;
+    @include desktop {
+        border-width: 2px;
+        font-weight: 600;
+        padding: .5em 1.5em;
+    }
     border-style: solid;
     border-color: color(curiosBlue);
-    padding: .5em 1.5em;
+    padding: .4em 1.5em;
     cursor: $pointer;
     font-size: $font16;
     margin: 8px 0;

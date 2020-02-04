@@ -116,10 +116,13 @@ main {
 }
 
 .client-btn {
-    padding: .45rem 1.2rem;
-    margin: .5vw 2vw 1.25vw;
-    border-width: 2px;
-    font-size: 1em;
+    padding: .7rem 1.2rem;
+    margin: 3vw 4vw 1.25vw;
+    @include desktop {
+        margin: .5vw 2vw 1.25vw;
+    }
+    border-width: 1px;
+    font-size: .9em;
 }
 
 .client-btn:hover {

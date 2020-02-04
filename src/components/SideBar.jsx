@@ -36,23 +36,29 @@ class SideBar extends React.Component {
           <div className="side-bar">
             <div className="menu-title">{texts.menuTitle}</div>
             <div className="menu-items">
-              <a className="menu-item" href={'https://rabbii.co.ke'}>
-                {texts.menuItems[0]}
+              <a className="menu-item" href="https://rabbii.co.ke/">
+                <span className={'activated hidden'}>&nbsp;</span>
+                <span className={'text'}>{texts.menuItems[0]}</span>
               </a>
-              <a className="menu-item active" href={'#landing'} onClick={event => this.menuHandler(event)}>
-                {texts.menuItems[1]}
+              <a className="menu-item active" href={'#landing'}  onClick={e => this.menuHandler(e)}>
+                <span className={'activated'}>&nbsp;</span>
+                <span className={'text'}>{texts.menuItems[1]}</span>
               </a>
               <a className="menu-item" href="https://tuition-jobs.rabbii.co.ke/">
-                {texts.menuItems[2]}
+                <span className={'activated hidden'}>&nbsp;</span>
+                <span className={'text'}>{texts.menuItems[2]}</span>
               </a>
-              <a className="menu-item" href="https://about.rabbii.co.ke/">
-                {texts.menuItems[3]}
+              <a className="menu-item" href={"https://about.rabbii.co.ke"}>
+                <span className={'activated hidden'}>&nbsp;</span>
+                <span className={'text'}>{texts.menuItems[3]}</span>
               </a>
               <a className="menu-item" href="https://trending.rabbii.co.ke/">
-                {texts.menuItems[4]}
+                <span className={'activated hidden'}>&nbsp;</span>
+                <span className={'text'}>{texts.menuItems[4]}</span>
               </a>
               <a className="menu-item" href="https://faqs.rabbii.co.ke/">
-                {texts.menuItems[5]}
+                <span className={'activated hidden'}>&nbsp;</span>
+                <span className={'text'}>{texts.menuItems[5]}</span>
               </a>
             </div>
           </div>

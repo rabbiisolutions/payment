@@ -18,6 +18,7 @@ $monitor: 1024px;
     padding: 3vw 0;
 
     @include desktop {
+        background-color: #EEEEEE;
         #facts-list {
             display: flex;
             flex-wrap: wrap;

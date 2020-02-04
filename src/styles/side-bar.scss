@@ -29,7 +29,7 @@ $navBarHeight: 3.5em;
 
     .menu-title {
         color: color(mirage64);
-        font-size: 4vw;
+        font-size: 3vw;
         text-align: center;
         display: block;
         padding-bottom: 1rem;
@@ -44,10 +44,10 @@ $navBarHeight: 3.5em;
 
     .menu-item {
         color: color(mirage);
-        padding: 20px 15px;
+        //padding: 20px 15px;
         width: 100%;
         cursor: pointer;
-        font-weight: 600;
+        font-weight: 300;
         font-size: 4vw;
 
         .text {
@@ -56,7 +56,7 @@ $navBarHeight: 3.5em;
         }
 
         .activated {
-            background-color: color(mirage);
+            background-color: #27A1DA;
             height: 100%;
         }
     }
