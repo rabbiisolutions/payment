@@ -121,7 +121,7 @@ $monitor: 1024px;
     padding: 2vw;
     border-radius: 10px;
     margin: 1.5vw 0 1.5vw 2.5vw;
-    width: auto;
+    width: fit-content;
     font-size: 4.5vw;
     text-align: left;
     @include desktop {
@@ -228,7 +228,7 @@ $monitor: 1024px;
         }
         .box {
             margin-right: 0;
-            margin-left: 2vw;
+            margin-left: 2.5vw;
             @include desktop {
                 margin-left: 0;
                 margin-right: 1vw;
@@ -268,7 +268,7 @@ $monitor: 1024px;
         }
         .box {
             margin-right: 0;
-            margin-left: 2vw;
+            margin-left: 2.5vw;
             @include desktop {
                 margin-right: 0;
                 margin-left: 1vw;

@@ -17,13 +17,13 @@ const Title = (props) => {
 const Timeline = (props) => {
   return (
       <div className={'timeline'}>
-        <span className={'box'}>
+        <div className={'box'}>
           {props.desc}
-        </span>
-        <span className={'step'}>
+        </div>
+        <div className={'step'}>
           <span className={'text'}>Step</span>
           <span className={'number'}>{props.num}</span>
-        </span>
+        </div>
       </div>
   )
 };
