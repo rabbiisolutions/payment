@@ -14,7 +14,7 @@ class NavBar extends React.Component {
       <nav id="nav-bar">
         <Logo className="logo" height={3} units={'rem'}/>
         <span className="nav">
-          <a className="nav-item" href="https://rabbii.co.ke/">
+          <a className="nav-item" href={texts.menuLinks[0]}>
                 <span className={'text'}>{texts.menuItems[0]}</span>
               <span className={'active hidden'}>&nbsp;</span>
             </a>
@@ -22,19 +22,19 @@ class NavBar extends React.Component {
                 <span className={'text'}>{texts.menuItems[1]}</span>
               <span className={'active'}>&nbsp;</span>
             </a>
-            <a className="nav-item" href="https://tuition-jobs.rabbii.co.ke/">
+            <a className="nav-item" href={texts.menuLinks[1]}>
                 <span className={'text'}>{texts.menuItems[2]}</span>
               <span className={'active hidden'}>&nbsp;</span>
             </a>
-            <a className="nav-item"  href="https://about.rabbii.co.ke/">
+            <a className="nav-item" href={texts.menuLinks[2]}>
                 <span className={'text'}>{texts.menuItems[3]}</span>
               <span className={'active hidden'}>&nbsp;</span>
             </a>
-            <a className="nav-item" href="https://trending.rabbii.co.ke/">
+            <a className="nav-item" href={texts.menuLinks[3]}>
                 <span className={'text'}>{texts.menuItems[4]}</span>
               <span className={'active hidden'}>&nbsp;</span>
             </a>
-            <a className="nav-item" href="https://faqs.rabbii.co.ke/">
+            <a className="nav-item" href={texts.menuLinks[4]}>
                 <span className={'text'}>{texts.menuItems[5]}</span>
               <span className={'active hidden'}>&nbsp;</span>
             </a>
