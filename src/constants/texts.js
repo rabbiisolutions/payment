@@ -1,8 +1,8 @@
 const signUp = 'Sign Up';
 const menuTitle = 'Menu';
-const menuItems = ['Home', 'Payment', 'Become a Tutor', 'About Us', 'Trending', 'FAQs'];
+const menuItems = ['Home', 'Payment', 'Become a Tutor', 'About Us', 'FAQs', 'Trending'];
 const menuLinks = ['https://rabbii.co.ke', 'https://tutor.rabbii.co.ke', 'https://about.rabbii.co.ke',
-  'https://trending.rabbii.co.ke', 'https://faqs.rabbii.co.ke'];
+  'https://faqs.rabbii.co.ke', 'https://trending.rabbii.co.ke'];
 const titles = ['Types of teachers', 'tuition types', 'get a discount'];
 const hidden = 'hidden';
 
