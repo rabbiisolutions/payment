@@ -108,11 +108,14 @@ main {
     text-decoration: none;
     font-size: 1.25vw;
     display: inline-block;
-    border-color: color(curiosBlue);
+    border-color: #0071A5;
     border-style: solid;
     text-align: center;
-    background-color: color(white);
-    color: color(curiosBlue);
+    background-color: #0071A5;
+    color: #FFFFFF;
+    &:hover {
+        text-decoration: none !important;
+    }
 }
 
 .client-btn {
@@ -135,22 +138,20 @@ main {
 }
 
 .refer {
-    background-color: color(curiosBlue);
-    color: color(white);
     margin-bottom: 3vw;
     padding: .5rem 1.75rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     @include desktop {
         margin-bottom: 0;
-        font-size: 1.125rem;
+        padding: .4rem 1.75rem;
     }
     @include monitor {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        padding: .5rem 1.75rem;
     }
-}
-.refer:hover {
-    background-color: color(white);
-    color: color(curiosBlue);
+    &:hover {
+        color: #FFFFFF;
+    }
 }
 
 .info {
@@ -249,4 +250,3 @@ main {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
-

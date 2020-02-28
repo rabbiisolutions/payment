@@ -1,12 +1,19 @@
 import React from "react";
-import Logo from "./basic/Logo";
 import Icon from "./basic/Icon";
 import toggle from "../assets/icons/menu.svg"
 import Button from "./basic/Button";
 import texts from "../constants/texts";
 import menuToggle from "../events/MenuToggle";
 import modals from "../events/modals";
+import logo from "../assets/icons/logo.svg";
 
+const Logo = (props) => {
+  return (
+      <a href={texts.menuLinks[0]}>
+        <Icon src={logo} className={props.className} height={props.height} units={props.units}/>
+      </a>
+  );
+};
 
 class NavBar extends React.Component {
   render() {
