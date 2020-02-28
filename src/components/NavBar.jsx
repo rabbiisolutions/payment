@@ -4,8 +4,8 @@ import Icon from "./basic/Icon";
 import toggle from "../assets/icons/menu.svg"
 import Button from "./basic/Button";
 import texts from "../constants/texts";
-import signUpHandler from "../events/SignUpModal";
 import menuToggle from "../events/MenuToggle";
+import modals from "../events/modals";
 
 
 class NavBar extends React.Component {
@@ -39,7 +39,7 @@ class NavBar extends React.Component {
               <span className={'active hidden'}>&nbsp;</span>
             </a>
         </span>
-        <Button value={texts.signUp} onClick={e => signUpHandler(e)}/>
+        <Button value={texts.signUp} onClick={e => modals.tutorForms(e)}/>
         <Icon src={toggle} className="toggle" height={2.25} width={5} onClick={e => menuToggle(e)}/>
       </nav>
     );

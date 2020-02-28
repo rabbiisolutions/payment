@@ -12,7 +12,6 @@ import './styles/discount.css';
 import './styles/services.css';
 import './styles/footer.css';
 import './styles/side-bar.css';
-import './styles/signup-modal.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 

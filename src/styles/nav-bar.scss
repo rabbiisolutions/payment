@@ -184,4 +184,7 @@ button {
     cursor: $pointer;
     font-size: $font16;
     margin: 8px 0;
+    &:focus {
+        outline: 0 !important;
+    }
 }

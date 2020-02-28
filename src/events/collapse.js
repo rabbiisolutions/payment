@@ -56,11 +56,6 @@ const sectionCollapseHandler = evt => {
     element.parentNode.scrollIntoView();
   } catch (e) {
     element.parentNode.scrollIntoView();
-    /*try {
-      element.parentNode.previousElementSibling.scrollIntoView();
-    } catch (e) {
-      element.parentNode.parentNode.previousElementSibling.scrollIntoView();
-    }*/
   }
 };
 

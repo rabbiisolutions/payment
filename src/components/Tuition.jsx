@@ -4,7 +4,7 @@ import ImageWebp from "../helpers/ImageWebp";
 import tuition from "../constants/tuition";
 import React from "react";
 import Icon from "./basic/Icon";
-import servicesToggle from "../events/services";
+import modals from "../events/modals";
 
 const Card = (props) => {
   return (
@@ -14,7 +14,7 @@ const Card = (props) => {
         <h4>{props.title}</h4>
         <Icon src={props.icon} width={15} height={15} units={'vw'} className={'tuition-icon'}/>
         <p>{props.desc}</p>
-        <Button className={'services'} value={'Get a Tutor'} onClick={e => servicesToggle(e)}/>
+        <Button className={'services'} value={'Get a Tutor'} onClick={e => modals.tutorForms(e)}/>
       </div>
     </div>
   );
