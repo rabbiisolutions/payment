@@ -15,7 +15,7 @@ const Services = () => {
         {services.map((service) => (<a href={service.link} className={'service-link'} key={service.key}>{service.title}</a>))}
       </section>
       <section>
-        <a href={'https://rabbii.co.ke'} className={'learn'}>Learn more about our services here</a>
+        <a href={'https://rabbii.co.ke/#services'} className={'learn'}>Learn more about our services here</a>
       </section>
     </div>
   );
